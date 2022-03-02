@@ -137,6 +137,7 @@ pub enum StringOrVecOfString {
 }
 
 #[derive(Debug, Serialize, Default, Builder)]
+#[serde(rename_all = "camelCase")]
 #[builder(default)]
 /// algolia search parameters
 /// see [https://www.algolia.com/doc/api-reference/search-api-parameters/](https://www.algolia.com/doc/api-reference/search-api-parameters/)
